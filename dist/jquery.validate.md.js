@@ -70,6 +70,7 @@
 
 
 $.extend($.validator.messages, {
+  fullemail: 'Please enter a valid email address.',
   requiredphone: "This field is required.",
   minlengthphone: "Please enter a valid phone number.",
   fio: "Please enter a valid your real name"
@@ -84,7 +85,7 @@ $.validator.addMethod('requiredphone', function (value, elements) {
 }, $.validator.messages.requiredphone);
 $.validator.addMethod('emailfull', function (value, element) {
   return this.optional(element) || /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/.test(value);
-}, $.validator.messages.email); // Validate method for Фамилия Имя Отчество || Фамилия Имя
+}, $.validator.messages.fullemail); // Validate method for Фамилия Имя Отчество || Фамилия Имя
 
 $.validator.addMethod('fio', function (value, element) {
   return this.optional(element) || /^[А-ЯЁ][а-яё]+(-[А-ЯЁ][а-яё]+)? [А-ЯЁ][а-яё]+( [А-ЯЁ][а-яё]+)?$/.test(value);
