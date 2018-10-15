@@ -1,6 +1,6 @@
 {
   "name": "jquery-validation-for-material-design",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "jQuery Validation with support Material Design + Masked Input Plugin ",
   "main": "validate.material-design.js",
   "scripts": {
