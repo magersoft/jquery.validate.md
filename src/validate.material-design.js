@@ -70,7 +70,7 @@ $.extend($.validator.messages, {
 
 /* Custom Validation Method */
 $.validator.addMethod('minlengthphone', function (value, element) {
-    return value.replace(/\D+/g, '').length > 10;
+    return value.replace(/\D+/g, '').length > 9;
 }, $.validator.messages.minlengthphone);
 $.validator.addMethod('requiredphone', function (value, elements) {
     return value.replace(/\D+/g, '').length > 1;
